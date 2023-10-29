@@ -1,2 +1,10 @@
-export { BuildMode, BuildPaths, BuildOptions } from "./types/config";
-export { buildConfig } from "./buildConfig/buildConfig";
+import { buildConfig } from "./buildConfig/buildConfig";
+
+export default buildConfig;
+export {
+  BuildMode,
+  BuildPaths,
+  BuildOptions,
+  BuildEnv,
+  BuildPort,
+} from "./types/config";
