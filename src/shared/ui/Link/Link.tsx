@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import {
   Link as ReactLink,
   LinkProps as ReactLinkProps,
@@ -10,6 +11,7 @@ type LinkVariant = "primary" | "secondary" | "red";
 interface LinkProps extends ReactLinkProps {
   className?: string;
   theme?: LinkVariant;
+  children?: ReactNode;
 }
 
 export const Link = (props: LinkProps) => {

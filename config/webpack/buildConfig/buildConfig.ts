@@ -14,7 +14,8 @@ export function buildConfig(options: BuildOptions): webpack.Configuration {
     mode: mode,
     entry: paths.entry,
     output: {
-      filename: "[name].bundle.js",
+      filename: "js/[name].bundle.js",
+      chunkFilename: "js/[id].bundle.js",
       path: paths.build,
       clean: true,
     },
