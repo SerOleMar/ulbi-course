@@ -9,3 +9,17 @@
   color: var(--primary-color);
   min-height: 100vh;
 }
+.content {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - var(--navbar-height));
+}
+.sidebar {
+  height: 100%;
+}
+.main {
+  flex-grow: 1;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+}
